@@ -1,0 +1,2 @@
+select 
+event_time, server_principal_name, server_instance_name, database_name, schema_name, object_name, statement, host_name from fn_get_audit_file ('E:\logs\*.sqlaudit', default, default) where database_name = 'perl_db' AND schema_name ='dbo' ORDER BY event_time DESC
