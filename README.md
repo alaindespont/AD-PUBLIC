@@ -1,2 +1,2 @@
 # AD-PUBLIC
-My public stuff
+Mes projets publics
