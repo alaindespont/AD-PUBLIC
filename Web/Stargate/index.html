@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Stargate</title>
+	<link rel='stylesheet' type='text/css' href='style.css'/>
+	<script type='text/javascript' src='jquery.js'></script>
+        <script type='text/javascript' src='javascript.js'></script>
+	</head>
+<body scroll="no" style="overflow:hidden" onload="Coord()">
+
+
+
+<img id="Horizon_Abydos" class="horizon" src="img/Horizon_Abydos.jpg" />
+<img id="Horizon_Camelot" class="horizon" src="img/Horizon_Camelot.jpg" />
+<img id="Horizon_Chulak" class="horizon" src="img/Horizon_Chulak.jpg" />
+<img id="Horizon_Dakara" class="horizon" src="img/Horizon_Dakara.jpg" />
+<img id="Horizon_Edora" class="horizon" src="img/Horizon_Edora.jpg" />
+<img id="Horizon_Euronda" class="horizon" src="img/Horizon_Euronda.jpg" />
+<img id="Horizon_Kheb" class="horizon" src="img/Horizon_Kheb.jpg" />
+<img id="Horizon_Taonas" class="horizon" src="img/Horizon_Taonas.jpg" />
+<img id="Horizon_Tartarus" class="horizon" src="img/Horizon_Tartarus.jpg" />
+<img id="Horizon_Tollana" class="horizon" src="img/Horizon_Tollana.jpg" />
+<img id="Horizon_SiteAlpha" class="horizon" src="img/Horizon_SiteAlpha.jpg" />
+<img id="Horizon" class="horizon" src="img/Horizon.jpg" />
+<img id="Mobile" class="porte_mobile" src="img/PorteDesEtoiles_CadreMobile.svg" />
+<img id="Porte" class="porte_immobile" src="img/PorteDesEtoiles_CadreImmobile.svg" />
+
+
+
+<form class="panneauDHD" name="dhd">
+<p>Insérez les coordonnées manuellement.</p>
+<input type="checkbox" class="checkSymbole" id="s1" name="checkSymbole1" value="1" onClick="return KeepCount()" /><label class="s1" for="s1"></label>
+<input type="checkbox" class="checkSymbole" id="s2" name="checkSymbole2" value="2" onClick="return KeepCount()" /><label class="s2" for="s2"></label>
+<input type="checkbox" class="checkSymbole" id="s3" name="checkSymbole3" value="3" onClick="return KeepCount()" /><label class="s3" for="s3"></label>
+<input type="checkbox" class="checkSymbole" id="s4" name="checkSymbole4" value="4" onClick="return KeepCount()" /><label class="s4" for="s4"></label>
+<input type="checkbox" class="checkSymbole" id="s5" name="checkSymbole5" value="5" onClick="return KeepCount()" /><label class="s5" for="s5"></label>
+<input type="checkbox" class="checkSymbole" id="s6" name="checkSymbole6" value="6" onClick="return KeepCount()" /><label class="s6" for="s6"></label>
+<input type="checkbox" class="checkSymbole" id="s7" name="checkSymbole7" value="7" onClick="return KeepCount()" /><label class="s7" for="s7"></label>
+<input type="checkbox" class="checkSymbole" id="s8" name="checkSymbole8" value="8" onClick="return KeepCount()" /><label class="s8" for="s8"></label>
+<input type="checkbox" class="checkSymbole" id="s9" name="checkSymbole9" value="9" onClick="return KeepCount()" /><label class="s9" for="s9"></label>
+<input type="checkbox" class="checkSymbole" id="s10" name="checkSymbole10" value="10" onClick="return KeepCount()" /><label class="s10" for="s10"></label>
+<input type="checkbox" class="checkSymbole" id="s11" name="checkSymbole11" value="11" onClick="return KeepCount()" /><label class="s11" for="s11"></label>
+<input type="checkbox" class="checkSymbole" id="s12" name="checkSymbole12" value="12" onClick="return KeepCount()" /><label class="s12" for="s12"></label>
+<input type="checkbox" class="checkSymbole" id="s13" name="checkSymbole13" value="13" onClick="return KeepCount()" /><label class="s13" for="s13"></label>
+<input type="checkbox" class="checkSymbole" id="s14" name="checkSymbole14" value="14" onClick="return KeepCount()" /><label class="s14" for="s14"></label>
+<input type="checkbox" class="checkSymbole" id="s15" name="checkSymbole15" value="15" onClick="return KeepCount()" /><label class="s15" for="s15"></label>
+<input type="checkbox" class="checkSymbole" id="s16" name="checkSymbole16" value="16" onClick="return KeepCount()" /><label class="s16" for="s16"></label>
+<input type="checkbox" class="checkSymbole" id="s17" name="checkSymbole17" value="17" onClick="return KeepCount()" /><label class="s17" for="s17"></label>
+<input type="checkbox" class="checkSymbole" id="s18" name="checkSymbole18" value="18" onClick="return KeepCount()" /><label class="s18" for="s18"></label>
+<input type="checkbox" class="checkSymbole" id="s19" name="checkSymbole19" value="19" onClick="return KeepCount()" /><label class="s19" for="s19"></label>
+<input type="checkbox" class="checkSymbole" id="s20" name="checkSymbole20" value="20" onClick="return KeepCount()" /><label class="s20" for="s20"></label>
+<input type="checkbox" class="checkSymbole" id="s21" name="checkSymbole21" value="21" onClick="return KeepCount()" /><label class="s21" for="s21"></label>
+<input type="checkbox" class="checkSymbole" id="s22" name="checkSymbole22" value="22" onClick="return KeepCount()" /><label class="s22" for="s22"></label>
+<input type="checkbox" class="checkSymbole" id="s23" name="checkSymbole23" value="23" onClick="return KeepCount()" /><label class="s23" for="s23"></label>
+<input type="checkbox" class="checkSymbole" id="s24" name="checkSymbole24" value="24" onClick="return KeepCount()" /><label class="s24" for="s24"></label>
+<input type="checkbox" class="checkSymbole" id="s25" name="checkSymbole25" value="25" onClick="return KeepCount()" /><label class="s25" for="s25"></label>
+<input type="checkbox" class="checkSymbole" id="s26" name="checkSymbole26" value="26" onClick="return KeepCount()" /><label class="s26" for="s26"></label>
+<input type="checkbox" class="checkSymbole" id="s27" name="checkSymbole27" value="27" onClick="return KeepCount()" /><label class="s27" for="s27"></label>
+<input type="checkbox" class="checkSymbole" id="s28" name="checkSymbole28" value="28" onClick="return KeepCount()" /><label class="s28" for="s28"></label>
+<input type="checkbox" class="checkSymbole" id="s29" name="checkSymbole29" value="29" onClick="return KeepCount()" /><label class="s29" for="s29"></label>
+<input type="checkbox" class="checkSymbole" id="s30" name="checkSymbole30" value="30" onClick="return KeepCount()" /><label class="s30" for="s30"></label>
+<input type="checkbox" class="checkSymbole" id="s31" name="checkSymbole31" value="31" onClick="return KeepCount()" /><label class="s31" for="s31"></label>
+<input type="checkbox" class="checkSymbole" id="s32" name="checkSymbole32" value="32" onClick="return KeepCount()" /><label class="s32" for="s32"></label>
+<input type="checkbox" class="checkSymbole" id="s33" name="checkSymbole33" value="33" onClick="return KeepCount()" /><label class="s33" for="s33"></label>
+<input type="checkbox" class="checkSymbole" id="s34" name="checkSymbole34" value="34" onClick="return KeepCount()" /><label class="s34" for="s34"></label>
+<input type="checkbox" class="checkSymbole" id="s35" name="checkSymbole35" value="35" onClick="return KeepCount()" /><label class="s35" for="s35"></label>
+<input type="checkbox" class="checkSymbole" id="s36" name="checkSymbole36" value="36" onClick="return KeepCount()" /><label class="s36" for="s36"></label>
+<input type="checkbox" class="checkSymbole" id="s37" name="checkSymbole37" value="37" onClick="return KeepCount()" /><label class="s37" for="s37"></label>
+<input type="checkbox" class="checkSymbole" id="s38" name="checkSymbole38" value="38" onClick="return KeepCount()" /><label class="s38" for="s38"></label>
+<input type="checkbox" class="checkSymbole" id="s39" name="checkSymbole39" value="39" onClick="return KeepCount()" /><label class="s39" for="s39"></label>
+
+<p> Choisissez une destination pré-enregistrées</p>
+<select id="select"  onChange="SelectCoord()">
+<option value="none"></option>
+<option value="abydos">Abydos</option>
+<option value="camelot">Camelot</option>
+<option value="chulak">Chulak</option>
+<option value="dakara">Dakara</option>
+<option value="edora">Edora</option>
+<option value="euronda">Euronda</option>
+<option value="kheb">Kheb</option>
+<option value="taonas">Praclarush Taonas</option>
+<option value="sitealpha">Site Alpha</option>
+<option value="tartarus">Tartarus</option>
+<option value="tollana">Tollana</option>
+</select> 
+
+<input type="button" id="ouverture" value="Lancer la mission" onClick="LancementMission()"/>
+<input type="button" id="fermeture" value="Fermer la porte" onClick="Reset()"/>
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+			
+</body>
+</html>

@@ -1,0 +1,20 @@
+Distance entre le Soleil et Mercure : 58
+Distance entre Mercure et Venus : 50
+Distance entre Venus et la Terre : 42
+Distance entre La Terre et Mars : 78
+Distance entre Mars et Jupiter : 550
+Distance entre Jupiter et Saturne : 649
+Distance entre Saturne et Uranus : 1442
+Distance entre Uranus et Neptune : 1628
+Distance entre Neptune et Pluton : 1403
+
+
+Mercure : 158
+Venus : 208
+Terre : 250
+Mars : 328
+Jupiter : 878
+Saturne : 1527
+Uranus : 2969
+Neptune : 4597
+Pluton : 6000

@@ -1,0 +1,307 @@
+html {
+background-color: black;
+min-width:1280px;
+min-height:720px;
+}
+
+.porte_mobile {
+position: absolute;
+height: 700px;
+width: 700px;
+top: 50%;
+left: 50%;
+margin-left: -350px;
+margin-top: -350px;
+-moz-transition: all 4s ease;
+-webkit-transition: all 4s ease;
+-o-transition: all 4s ease;
+transition: all 4s ease;
+}
+
+.porte_immobile {
+position: absolute;
+height: 700px;
+width: 700px;
+top: 50%;
+left: 50%;
+margin-left: -350px;
+margin-top: -350px;
+}
+
+.horizon{
+display:none;
+position: absolute;
+height: 600px;
+width: 600px;
+top: 50%;
+left: 50%;
+margin-left: -300px;
+margin-top: -300px;
+}
+
+.panneauDHD {
+padding-left:4px;
+padding-top:4px;
+padding-bottom:4px;
+max-width:240px;
+background-color:grey;
+}
+
+input[type=button] {
+min-width:236px;
+min-height:50px;
+}	
+
+input[type=checkbox] {
+display:none;
+}
+
+input[type=checkbox] + label{
+height: 58px;
+width: 56px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+   
+input[type=checkbox]:checked + label{
+background-image: url("img/symbole2.png");
+height: 58px;
+width: 56px;
+display:inline-block;
+padding: 0 0 0 0px;
+}
+   
+input[type=checkbox] + label.s1{
+background-image: url("img/symbole1.png");
+}
+input[type=checkbox]:checked + label.s1{
+background-image: url("img/symbole1A.png");
+}
+input[type=checkbox] + label.s2{
+background-image: url("img/symbole2.png");
+}
+input[type=checkbox]:checked + label.s2{
+background-image: url("img/symbole2A.png");
+}
+input[type=checkbox] + label.s3{
+background-image: url("img/symbole3.png");
+}
+input[type=checkbox]:checked + label.s3{
+background-image: url("img/symbole3A.png");
+}
+input[type=checkbox] + label.s4{
+background-image: url("img/symbole4.png");
+}
+input[type=checkbox]:checked + label.s4{
+background-image: url("img/symbole4A.png");
+}
+input[type=checkbox] + label.s5{
+background-image: url("img/symbole5.png");
+}
+input[type=checkbox]:checked + label.s5{
+background-image: url("img/symbole5A.png");
+}
+input[type=checkbox] + label.s6{
+background-image: url("img/symbole6.png");
+}
+input[type=checkbox]:checked + label.s6{
+background-image: url("img/symbole6A.png");
+}
+input[type=checkbox] + label.s7{
+background-image: url("img/symbole7.png");
+}
+input[type=checkbox]:checked + label.s7{
+background-image: url("img/symbole7A.png");
+}
+input[type=checkbox] + label.s8{
+background-image: url("img/symbole8.png");
+}
+input[type=checkbox]:checked + label.s8{
+background-image: url("img/symbole8A.png");
+}
+input[type=checkbox] + label.s9{
+background-image: url("img/symbole9.png");
+}
+input[type=checkbox]:checked + label.s9{
+background-image: url("img/symbole9A.png");
+}
+input[type=checkbox] + label.s10{
+background-image: url("img/symbole10.png");
+}
+input[type=checkbox]:checked + label.s10{
+background-image: url("img/symbole10A.png");
+}
+input[type=checkbox] + label.s11{
+background-image: url("img/symbole11.png");
+}
+input[type=checkbox]:checked + label.s11{
+background-image: url("img/symbole11A.png");
+}
+input[type=checkbox] + label.s12{
+background-image: url("img/symbole12.png");
+}
+input[type=checkbox]:checked + label.s12{
+background-image: url("img/symbole12A.png");
+}
+input[type=checkbox] + label.s13{
+background-image: url("img/symbole13.png");
+}
+input[type=checkbox]:checked + label.s13{
+background-image: url("img/symbole13A.png");
+}
+input[type=checkbox] + label.s14{
+background-image: url("img/symbole14.png");
+}
+input[type=checkbox]:checked + label.s14{
+background-image: url("img/symbole14A.png");
+}
+input[type=checkbox] + label.s15{
+background-image: url("img/symbole15.png");
+}
+input[type=checkbox]:checked + label.s15{
+background-image: url("img/symbole15A.png");
+}
+input[type=checkbox] + label.s16{
+background-image: url("img/symbole16.png");
+}
+input[type=checkbox]:checked + label.s16{
+background-image: url("img/symbole16A.png");
+}
+input[type=checkbox] + label.s17{
+background-image: url("img/symbole17.png");
+}
+input[type=checkbox]:checked + label.s17{
+background-image: url("img/symbole17A.png");
+}
+input[type=checkbox] + label.s18{
+background-image: url("img/symbole18.png");
+}
+input[type=checkbox]:checked + label.s18{
+background-image: url("img/symbole18A.png");
+}
+input[type=checkbox] + label.s19{
+background-image: url("img/symbole19.png");
+}
+input[type=checkbox]:checked + label.s19{
+background-image: url("img/symbole19A.png");
+}
+input[type=checkbox] + label.s20{
+background-image: url("img/symbole20.png");
+}
+input[type=checkbox]:checked + label.s20{
+background-image: url("img/symbole20A.png");
+}
+input[type=checkbox] + label.s21{
+background-image: url("img/symbole21.png");
+}
+input[type=checkbox]:checked + label.s21{
+background-image: url("img/symbole21A.png");
+}
+input[type=checkbox] + label.s22{
+background-image: url("img/symbole22.png");
+}
+input[type=checkbox]:checked + label.s22{
+background-image: url("img/symbole22A.png");
+}
+input[type=checkbox] + label.s23{
+background-image: url("img/symbole23.png");
+}
+input[type=checkbox]:checked + label.s23{
+background-image: url("img/symbole23A.png");
+}
+input[type=checkbox] + label.s24{
+background-image: url("img/symbole24.png");
+}
+input[type=checkbox]:checked + label.s24{
+background-image: url("img/symbole24A.png");
+}
+input[type=checkbox] + label.s25{
+background-image: url("img/symbole25.png");
+}
+input[type=checkbox]:checked + label.s25{
+background-image: url("img/symbole25A.png");
+}
+input[type=checkbox] + label.s26{
+background-image: url("img/symbole26.png");
+}
+input[type=checkbox]:checked + label.s26{
+background-image: url("img/symbole26A.png");
+}
+input[type=checkbox] + label.s27{
+background-image: url("img/symbole27.png");
+}
+input[type=checkbox]:checked + label.s27{
+background-image: url("img/symbole27A.png");
+}
+input[type=checkbox] + label.s28{
+background-image: url("img/symbole28.png");
+}
+input[type=checkbox]:checked + label.s28{
+background-image: url("img/symbole28A.png");
+}
+input[type=checkbox] + label.s29{
+background-image: url("img/symbole29.png");
+}
+input[type=checkbox]:checked + label.s29{
+background-image: url("img/symbole29A.png");
+}
+input[type=checkbox] + label.s30{
+background-image: url("img/symbole30.png");
+}
+input[type=checkbox]:checked + label.s30{
+background-image: url("img/symbole30A.png");
+}
+input[type=checkbox] + label.s31{
+background-image: url("img/symbole31.png");
+}
+input[type=checkbox]:checked + label.s31{
+background-image: url("img/symbole31A.png");
+}
+input[type=checkbox] + label.s32{
+background-image: url("img/symbole32.png");
+}
+input[type=checkbox]:checked + label.s32{
+background-image: url("img/symbole32A.png");
+}
+input[type=checkbox] + label.s33{
+background-image: url("img/symbole33.png");
+}
+input[type=checkbox]:checked + label.s33{
+background-image: url("img/symbole33A.png");
+}
+input[type=checkbox] + label.s34{
+background-image: url("img/symbole34.png");
+}
+input[type=checkbox]:checked + label.s34{
+background-image: url("img/symbole34A.png");
+}
+input[type=checkbox] + label.s35{
+background-image: url("img/symbole35.png");
+}
+input[type=checkbox]:checked + label.s35{
+background-image: url("img/symbole35A.png");
+}
+input[type=checkbox] + label.s36{
+background-image: url("img/symbole36.png");
+}
+input[type=checkbox]:checked + label.s36{
+background-image: url("img/symbole36A.png");
+}
+input[type=checkbox] + label.s37{
+background-image: url("img/symbole37.png");
+}
+input[type=checkbox]:checked + label.s37{
+background-image: url("img/symbole37A.png");
+}
+input[type=checkbox] + label.s38{
+background-image: url("img/symbole38.png");
+}
+input[type=checkbox]:checked + label.s38{
+background-image: url("img/symbole38A.png");
+}
+input[type=checkbox] + label.s39{
+background-image: url("img/symbole39.png");
+}
+input[type=checkbox]:checked + label.s39{
+background-image: url("img/symbole39A.png");
+}
