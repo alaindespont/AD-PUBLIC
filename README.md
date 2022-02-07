@@ -29,8 +29,9 @@ Utilisant différentes techniques et langages informatiques, certains projets so
 **Lab4Tech Study Manager**
 *Google Sheet de suivi d'étude.*
 
-**MailMerger.1.0**
+**ServiceDesk MailMerger**
 *Semi automatisation de mails pour le service-desk.*
+[EN PREPARATION]
 
 **PlanDesExtincteurs**
 *Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
