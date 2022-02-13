@@ -17,8 +17,8 @@ Utilisant différentes techniques et langages informatiques, certains projets so
 
 ## Documents
 
-**DecompteBoissonsDVDs**
-*Pour décompte de stock en petit format*
+**MS Teams Channel rework**
+*Plan de transformation d'une Teams et ses channels*
 
 **Dossier final IDEC**
 *Dossier de présentation pour le diplôme d'Administrateur système*
