@@ -20,6 +20,9 @@ Utilisant différentes techniques et langages informatiques, certains projets so
 **MS Teams Channel rework**
 *Plan de transformation d'une Teams et ses channels*
 
+**MS OneNote DocumentationMigrationHowTo**
+*Résultat d'une migration et nettoyage, classification d'une documentation sur OneNote*
+
 **Dossier final IDEC**
 *Dossier de présentation pour le diplôme d'Administrateur système*
 
@@ -43,6 +46,9 @@ Utilisant différentes techniques et langages informatiques, certains projets so
 
 **BackupToUSB**
 *Script personnel de sauvegarde*
+
+**DevOps_VMLabInstall**
+*Installation automatisée d'un set de machines virtuelles*
 
 **BackupVolume**
 *Script de sauvegarde des postes de Lab4Tech*
