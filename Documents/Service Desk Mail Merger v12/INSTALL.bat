@@ -1,0 +1,13 @@
+mkdir "C:\ServiceDesk_MailMerger"
+move /Y "%~dp0\installationfiles\01_Single Mails Templates" "C:\ServiceDesk_MailMerger"
+move /Y "%~dp0\installationfiles\02_AutomatedSolutions" "C:\ServiceDesk_MailMerger"
+move /Y "%~dp0\installationfiles\03_Install\MailMerger.lnk" "C:\Users\Public\Desktop"
+move /Y "%~dp0\installationfiles\03_Install\MailMerger.ico" "C:\Users\Public\Documents"
+move /Y "%~dp0\installationfiles\03_Install" "C:\ServiceDesk_MailMerger"
+move /Y "%~dp0\installationfiles\04_RQTExtract" "C:\ServiceDesk_MailMerger"
+move /Y "%~dp0\installationfiles\MailMerger.xlsm" "C:\ServiceDesk_MailMerger"
+move /Y "%~dp0\DOCUMENTATION.pdf" "C:\ServiceDesk_MailMerger"
+RD /Q /S "%~dp0\installationfiles"
+RD /Q /S "%~dp0"
+timeout /T 1 /NOBREAK
+del "%~dp0\Install.bat"
