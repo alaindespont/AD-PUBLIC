@@ -1,5 +1,6 @@
 # Mes projets publics
-Utilisant différentes techniques et langages informatiques, certains projets sont pour le plaisir d'apprendre, d'autres pour créer une solution métier, d'autres encore pour le plaisir.
+Utilisant différentes techniques et langages informatiques.
+Certains projets sont pour le plaisir d'apprendre, d'autres pour créer une solution métier.
 
 ## Batchs
 
