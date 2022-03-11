@@ -21,7 +21,8 @@ Utilisant différentes techniques et langages informatiques, certains projets so
 *Plan de transformation d'une Teams et ses channels*
 
 **MS OneNote DocumentationMigrationHowTo**
-*Résultat d'une migration et nettoyage, classification d'une documentation sur OneNote*
+*Résultat d'une migration et nettoyage.*
+*Classification d'une documentation sur OneNote*
 
 **Dossier final IDEC**
 *Dossier de présentation pour le diplôme d'Administrateur système*
@@ -34,7 +35,6 @@ Utilisant différentes techniques et langages informatiques, certains projets so
 
 **ServiceDesk MailMerger**
 *Semi automatisation de mails pour le service-desk.*
-[EN PREPARATION]
 
 **PlanDesExtincteurs**
 *Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
@@ -47,7 +47,7 @@ Utilisant différentes techniques et langages informatiques, certains projets so
 **BackupToUSB**
 *Script personnel de sauvegarde*
 
-**DevOps_VMLabInstall**
+**VMLabInstall**
 *Installation automatisée d'un set de machines virtuelles*
 
 **BackupVolume**
