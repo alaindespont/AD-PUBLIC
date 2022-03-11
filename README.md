@@ -77,7 +77,7 @@ Utilisant différentes techniques et langages informatiques, certains projets so
 *Sauvegarde complète d'une base de donnée*
 
 **2_Differential Backup**
-*Sauvegarde différentielle**
+*Sauvegarde différentielle*
 
 **3_TransactLog Backup**
 *Sauvegarde des transaction sur la base.*
