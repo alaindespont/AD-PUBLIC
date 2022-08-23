@@ -1,18 +1,32 @@
 # Mes projets publics
 
-## 000_Documents
+Contient tous mes projets de scripts, bouts de codes, documents IT que j'ai décidé de rendre publique.
 
-*MS Teams Channel rework : Plan de transformation d'une Teams et ses channels*
+Mes projets publics représentent actuellement : **348 Mo**
 
-*MS OneNote DocumentationMigrationHowTo :Résultat d'une migration et nettoyage, et classification d'une documentation sur OneNote*
+Mes projets privés représentent actuellement : **552 Mo**
 
-*Dossier final IDEC : Dossier de présentation pour le diplôme d'Administrateur système*
 
-*Lab4Tech Capsules :Mini-présentations sur des sujets IT*
+## 000_DocumentsNOCODE
 
-*PlanDesExtincteurs : Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
+**Dossier final IDEC**
+*Dossier de présentation pour le diplôme d'Administrateur système*
 
-*Politique de sécurité : Propositions pour un particulier.*
+**MS Teams Channel rework**
+*Plan de transformation d'une Teams et ses channels*
+
+**MS OneNote DocumentationMigrationHowTo**
+*Résultat d'une migration et nettoyage, et classification d'une documentation sur OneNote*
+
+**Lab4Tech Capsules**
+*Mini-présentations sur des sujets IT*
+
+**PlanDesExtincteurs**
+Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
+
+**Politique de sécurité**
+*Propositions pour un particulier.*
+
 
 ## BAT_Batchs
 
@@ -27,6 +41,7 @@
 
 **TestAGGroupSQL**
 *Testeur de groupe de disponibilité SQL Server.*
+
 
 ## PS1_PowerShell
 
@@ -60,6 +75,7 @@
 **TestConnectivité**
 *Résumé de connexion*
 
+
 ## SQL_Structured Query Language
 
 **BackupsJobs**
@@ -67,6 +83,7 @@
 
 **AuditJobs**
 *Audit les actions des utilisateurs sur la base.*
+
 
 ## WEB_HTML/CSS/Javascript
 
@@ -84,6 +101,7 @@
 
 **SystemSolaire**
 *Recréation du système solaire*
+
 
 ## XLS_Fichiers excel et google sheet avec macro et formules
 
