@@ -2,14 +2,14 @@
 
 ## 000_DocumentsNOCODE
 
+**Dossier final IDEC**
+*Dossier de présentation pour le diplôme d'Administrateur système*
+
 **MS Teams Channel rework**
 *Plan de transformation d'une Teams et ses channels*
 
 **MS OneNote DocumentationMigrationHowTo**
 *Résultat d'une migration et nettoyage, et classification d'une documentation sur OneNote*
-
-**Dossier final IDEC**
-*Dossier de présentation pour le diplôme d'Administrateur système*
 
 **Lab4Tech Capsules**
 *Mini-présentations sur des sujets IT*
