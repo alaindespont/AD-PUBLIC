@@ -1,8 +1,20 @@
 # Mes projets publics
-Utilisant différentes techniques et langages informatiques.
-Certains projets sont pour le plaisir d'apprendre, d'autres pour créer une solution métier.
 
-## Batchs
+## 000_Documents
+
+*MS Teams Channel rework : Plan de transformation d'une Teams et ses channels*
+
+*MS OneNote DocumentationMigrationHowTo :Résultat d'une migration et nettoyage, et classification d'une documentation sur OneNote*
+
+*Dossier final IDEC : Dossier de présentation pour le diplôme d'Administrateur système*
+
+*Lab4Tech Capsules :Mini-présentations sur des sujets IT*
+
+*PlanDesExtincteurs : Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
+
+*Politique de sécurité : Propositions pour un particulier.*
+
+## BAT_Batchs
 
 **Deploy**
 *Pour déployer des packages sans laisser de traces*
@@ -16,43 +28,13 @@ Certains projets sont pour le plaisir d'apprendre, d'autres pour créer une solu
 **TestAGGroupSQL**
 *Testeur de groupe de disponibilité SQL Server.*
 
-## Documents
-
-**MS Teams Channel rework**
-*Plan de transformation d'une Teams et ses channels*
-
-**MS OneNote DocumentationMigrationHowTo**
-*Résultat d'une migration et nettoyage.*
-*Classification d'une documentation sur OneNote*
-
-**Dossier final IDEC**
-*Dossier de présentation pour le diplôme d'Administrateur système*
-
-**Lab4Tech Capsules**
-*Mini-présentations sur des sujets IT*
-
-**Lab4Tech Study Manager**
-*Google Sheet de suivi d'étude.*
-
-**ServiceDesk MailMerger**
-*Semi automatisation de mails pour le service-desk.*
-
-**PlanDesExtincteurs**
-*Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
-
-**Politique de sécurité**
-*Proposition pour un particulier.*
-
-## PowerShell
+## PS1_PowerShell
 
 **BackupToUSB**
-*Script personnel de sauvegarde*
-
-**VMLabInstall**
-*Installation automatisée d'un set de machines virtuelles*
+*Ancien script personnel de sauvegarde sur clé usb*
 
 **BackupVolume**
-*Script de sauvegarde des postes de Lab4Tech*
+*Script pour sauvegarder les images de postes de travail de Lab4Tech de facon hebdomadaire.*
 
 **ListingProgrammesInstallés**
 *Extraction de la liste des programmes sur un ordinateur.*
@@ -63,6 +45,12 @@ Certains projets sont pour le plaisir d'apprendre, d'autres pour créer une solu
 **PreviewVidéos**
 *Pour faire des introductions de vidéos a durée précise.*
 
+**PreviewVidéos**
+*Pour faire des introductions de vidéos a durée précise.*
+
+**VMLabInstall**
+*Installation automatisée d'un set de machines virtuelles*
+
 **RemoveChromeFavicons**
 *Supprime les favicons.*
 
@@ -72,21 +60,15 @@ Certains projets sont pour le plaisir d'apprendre, d'autres pour créer une solu
 **TestConnectivité**
 *Résumé de connexion*
 
-## SQL
+## SQL_Structured Query Language
 
-**1_FullBackup**
-*Sauvegarde complète d'une base de donnée*
+**BackupsJobs**
+*Sauvegarde complète d'une base de donnée, différentielle, transaction.
 
-**2_Differential Backup**
-*Sauvegarde différentielle*
-
-**3_TransactLog Backup**
-*Sauvegarde des transaction sur la base.*
-
-**Audit des utilisateurs**
+**AuditJobs**
 *Audit les actions des utilisateurs sur la base.*
 
-## Web
+## WEB_HTML/CSS/Javascript
 
 **CalculateurDeSalaire**
 *Formulaire javascript pour le calcul d'un employé à l'heure*
@@ -102,3 +84,11 @@ Certains projets sont pour le plaisir d'apprendre, d'autres pour créer une solu
 
 **SystemSolaire**
 *Recréation du système solaire*
+
+## XLS_Fichiers excel et google sheet avec macro et formules
+
+**Lab4Tech Study manager**
+*Suivi de formation pour les stagiaires de Lab4Tech*
+
+**Service Desk Mail Merger**
+*Crée des mails pour un service desk*
