@@ -1,7 +1,9 @@
 # Mes projets publics
 
 *Contient tous mes projets de scripts, bouts de codes, documents IT que j'ai décidé de rendre publique.*
+
 *Mes projets publics représentent actuellement : 348 Mo*
+
 *Mes projets privés représentent actuellement : 552 Mo*
 
 ## 000_DocumentsNOCODE
