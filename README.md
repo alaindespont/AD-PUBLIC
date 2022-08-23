@@ -1,18 +1,24 @@
 # Mes projets publics
 
-## 000_Documents
+## 000_DocumentsNOCODE
 
-*MS Teams Channel rework : Plan de transformation d'une Teams et ses channels*
+**MS Teams Channel rework**
+*Plan de transformation d'une Teams et ses channels*
 
-*MS OneNote DocumentationMigrationHowTo :Résultat d'une migration et nettoyage, et classification d'une documentation sur OneNote*
+**MS OneNote DocumentationMigrationHowTo**
+*Résultat d'une migration et nettoyage, et classification d'une documentation sur OneNote*
 
-*Dossier final IDEC : Dossier de présentation pour le diplôme d'Administrateur système*
+**Dossier final IDEC**
+*Dossier de présentation pour le diplôme d'Administrateur système*
 
-*Lab4Tech Capsules :Mini-présentations sur des sujets IT*
+**Lab4Tech Capsules**
+*Mini-présentations sur des sujets IT*
 
-*PlanDesExtincteurs : Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
+**PlanDesExtincteurs**
+Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 
-*Politique de sécurité : Propositions pour un particulier.*
+**Politique de sécurité**
+*Propositions pour un particulier.*
 
 ## BAT_Batchs
 
