@@ -6,6 +6,7 @@ Mes projets publics représentent actuellement : **348 Mo**
 
 Mes projets privés représentent actuellement : **552 Mo**
 
+
 ## 000_DocumentsNOCODE
 
 **Dossier final IDEC**
@@ -26,6 +27,7 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 **Politique de sécurité**
 *Propositions pour un particulier.*
 
+
 ## BAT_Batchs
 
 **Deploy**
@@ -39,6 +41,7 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 
 **TestAGGroupSQL**
 *Testeur de groupe de disponibilité SQL Server.*
+
 
 ## PS1_PowerShell
 
@@ -72,6 +75,7 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 **TestConnectivité**
 *Résumé de connexion*
 
+
 ## SQL_Structured Query Language
 
 **BackupsJobs**
@@ -79,6 +83,7 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 
 **AuditJobs**
 *Audit les actions des utilisateurs sur la base.*
+
 
 ## WEB_HTML/CSS/Javascript
 
@@ -96,6 +101,7 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 
 **SystemSolaire**
 *Recréation du système solaire*
+
 
 ## XLS_Fichiers excel et google sheet avec macro et formules
 
