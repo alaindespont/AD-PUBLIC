@@ -2,7 +2,7 @@
 ########################################################################################################################
 ########################################################################################################################
 ###### Créé par : Alain Philip Despont
-###### Dernière mise à jour : 19.03.2021
+###### Dernière mise à jour : 21.10.2022
 ###### But du script : Diagnostiquer une connexion internet
 ###### Logiciels additionnels : 
 ###### Notes :
@@ -71,7 +71,7 @@ write-host -ForegroundColor Yellow "ADRESSAGE IP"
 #La passerelle
 write-host -ForegroundColor Yellow "PASSERELLE"
 ""
-"Passerelle par défaut               $Passerelle"
+"Passerelle par défaut" + "                " + "     IPv4:" + $Passerelle[0] + "    IPv6:" + $Passerelle[1] 
 ""
 
 
@@ -94,7 +94,7 @@ else
 
 
 #On teste si la passerelle est joignable
-$accespasserelle = Test-netconnection "$passerelle"
+$accespasserelle = Test-netconnection $passerelle[0]
 if ($accespasserelle.PingSucceeded -eq $True)
 {write-host -ForegroundColor Green "La passerelle par défaut est joignable depuis cet ordinateur"}
 else
@@ -120,6 +120,3 @@ else
 
 
 Read-Host -Prompt "Presser Enter pour quitter"
-
-
-
