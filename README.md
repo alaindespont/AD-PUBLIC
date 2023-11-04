@@ -7,7 +7,7 @@ Mes projets publics représentent actuellement : **348 Mo**
 Mes projets privés représentent actuellement : **552 Mo**
 
 
-## 000_DocumentsNOCODE
+## Projets sans programmation
 
 **Dossier final IDEC**
 *Dossier de présentation pour le diplôme d'Administrateur système*
@@ -28,7 +28,7 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 *Propositions pour un particulier.*
 
 
-## BAT_Batchs
+## Projets Batchs
 
 **Deploy**
 *Pour déployer des packages sans laisser de traces*
@@ -43,7 +43,7 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 *Testeur de groupe de disponibilité SQL Server.*
 
 
-## PS1_PowerShell
+## Projets Powershells
 
 **BackupToUSB**
 *Ancien script personnel de sauvegarde sur clé usb*
@@ -76,7 +76,7 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 *Résumé de connexion*
 
 
-## SQL_Structured Query Language
+## Projets SQL
 
 **BackupsJobs**
 *Sauvegarde complète d'une base de donnée, différentielle, transaction.
@@ -85,7 +85,7 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 *Audit les actions des utilisateurs sur la base.*
 
 
-## WEB_HTML/CSS/Javascript
+## ## Projets Spreadsheets
 
 **CalculateurDeSalaire**
 *Formulaire javascript pour le calcul d'un employé à l'heure*
@@ -102,8 +102,7 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 **SystemSolaire**
 *Recréation du système solaire*
 
-
-## XLS_Fichiers excel et google sheet avec macro et formules
+## Projets Spreadsheets
 
 **Lab4Tech Study manager**
 *Suivi de formation pour les stagiaires de Lab4Tech*
