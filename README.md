@@ -3,7 +3,6 @@
 Contient tous mes projets de scripts, bouts de codes, documents IT que j'ai décidé de rendre publique.
 
 Mes projets publics représentent actuellement : **348 Mo**
-
 Mes projets privés représentent actuellement : **552 Mo**
 
 
@@ -20,13 +19,6 @@ Mes projets privés représentent actuellement : **552 Mo**
 
 **Lab4Tech Capsules**
 *Mini-présentations sur des sujets IT*
-
-**PlanDesExtincteurs**
-Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
-
-**Politique de sécurité**
-*Propositions pour un particulier.*
-
 
 ## Projets Batchs
 
@@ -54,12 +46,6 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 **ListingProgrammesInstallés**
 *Extraction de la liste des programmes sur un ordinateur.*
 
-**ModernOpenFiles**
-*Ouvre et crée des fichiers datés pour un poste de travail.*
-
-**PreviewVidéos**
-*Pour faire des introductions de vidéos a durée précise.*
-
 **PreviewVidéos**
 *Pour faire des introductions de vidéos a durée précise.*
 
@@ -84,7 +70,6 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 **AuditJobs**
 *Audit les actions des utilisateurs sur la base.*
 
-
 ## ## Projets Spreadsheets
 
 **CalculateurDeSalaire**
@@ -103,9 +88,6 @@ Plan de sorties de secours et suivi des dates de servicage des extincteurs.*
 *Recréation du système solaire*
 
 ## Projets Spreadsheets
-
-**Lab4Tech Study manager**
-*Suivi de formation pour les stagiaires de Lab4Tech*
 
 **Service Desk Mail Merger**
 *Crée des mails pour un service desk*
