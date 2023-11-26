@@ -2,23 +2,19 @@
 
 Contient tous mes projets de scripts, bouts de codes, documents IT que j'ai décidé de rendre publique.
 
-Mes projets publics représentent actuellement : **348 Mo**
-Mes projets privés représentent actuellement : **552 Mo**
-
-
 ## Projets sans programmation
 
 **Dossier final IDEC**
 *Dossier de présentation pour le diplôme d'Administrateur système*
 
 **MS Teams Channel rework**
-*Plan de transformation d'une Teams et ses channels*
+*Plan de transformation d'une équipe Teams et ses channels*
 
 **MS OneNote DocumentationMigrationHowTo**
-*Résultat d'une migration et nettoyage, et classification d'une documentation sur OneNote*
+*Résultat d'une migration et nettoyage, et classification d'une documentation du support IT sur OneNote*
 
 **Lab4Tech Capsules**
-*Mini-présentations sur des sujets IT*
+*Mini-présentations sur des sujets IT pour Lab4Tech*
 
 ## Projets Batchs
 
@@ -48,9 +44,6 @@ Mes projets privés représentent actuellement : **552 Mo**
 
 **PreviewVidéos**
 *Pour faire des introductions de vidéos a durée précise.*
-
-**VMLabInstall**
-*Installation automatisée d'un set de machines virtuelles*
 
 **RemoveChromeFavicons**
 *Supprime les favicons.*
