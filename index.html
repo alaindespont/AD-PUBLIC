@@ -1,0 +1,696 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+	<title>Alain Philip Despont</title>
+	<meta name="keywords" content="alain despont curriculum vitae"/>
+	<meta name="description" content="Site web personnel / Curriculum Vitae"/>
+	<meta name="author" content="Alain Philip Despont"/>
+	<link rel="icon" type="image/x-icon" href="favicon.ico?"/>
+
+<script>
+
+
+function reset() {
+	document.getElementById('art1').style.display = "none";
+	document.getElementById('art2').style.display = "none";
+	document.getElementById('art3').style.display = "none";
+	document.getElementById('art4').style.display = "none";
+    location.reload(true);
+};
+
+
+
+function art1(){
+var x1 = document.getElementById("art1");
+var x2 = document.getElementById("art2");
+var x3 = document.getElementById("art3");
+var x4 = document.getElementById("art4");
+if (x1.style.display === "none"){
+	x1.style.display = "block";
+	x2.style.display = "none";
+	x3.style.display = "none";
+	x4.style.display = "none";
+	}
+else {x1.style.display = "none";}
+}
+
+function art2(){
+var x1 = document.getElementById("art1");
+var x2 = document.getElementById("art2");
+var x3 = document.getElementById("art3");
+var x4 = document.getElementById("art4");
+if (x2.style.display === "none"){
+	x1.style.display = "none";
+	x2.style.display = "block";
+	x3.style.display = "none";
+	x4.style.display = "none";
+	}
+else {x2.style.display = "none";}
+}
+
+function art3(){
+var x1 = document.getElementById("art1");
+var x2 = document.getElementById("art2");
+var x3 = document.getElementById("art3");
+var x4 = document.getElementById("art4");
+if (x3.style.display === "none"){
+	x1.style.display = "none";
+	x2.style.display = "none";
+	x3.style.display = "block";
+	x4.style.display = "none";
+	}
+else {x3.style.display = "none";}
+}
+
+function art4(){
+var x1 = document.getElementById("art1");
+var x2 = document.getElementById("art2");
+var x3 = document.getElementById("art3");
+var x4 = document.getElementById("art4");
+if (x4.style.display === "none"){
+	x1.style.display = "none";
+	x2.style.display = "none";
+	x3.style.display = "none";
+	x4.style.display = "block";
+	}
+else {x4.style.display = "none";}
+}
+
+
+
+
+
+
+
+
+
+/* FONCTION POUR COPIER L'EMAIL   */
+function Copy() {
+const textToCopy = 'alain.despont@outlook.com'
+navigator.clipboard.writeText(textToCopy)
+.then(() => { alert('Email copié : ' + textToCopy) })
+.catch((error) => { alert(`Copy failed! ${error}`) })
+} 
+
+</script>
+
+<style>
+html, body {
+	width:100%;
+	height:100%;
+	min-width: 320px;
+	min-height:480px;
+	margin: 0;
+	padding: 0;
+	background-color: light-grey;
+	text-align:center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: inherit;
+	font-style: inherit;
+	text-decoration: inherit;
+}
+
+a{
+	text-decoration: none;
+	color:black;
+}
+
+body {
+	min-width: 320px;
+	min-height:480px;
+	max-width:1024px;
+	max-height:600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+footer {
+	float:left;
+	width:100%;
+	min-width: 320px;
+	color: grey;
+	padding-top: 50px;
+	float: left;
+}
+nav ul {
+	padding:0px;
+}
+
+h3{
+	font-size: 1em;
+	text-transform: uppercase;
+	margin-top:10px;
+	margin-bottom:20px;
+}
+
+nav li {
+display:inline-block;
+background-color: #012456;
+color:#eeedf0;
+min-width: 100px;
+text-align:center;
+margin: auto;
+margin-top:5px;
+padding: 20px;
+font-size: 1.4em;
+font-weight: bold;
+font-family: Arial, Helvetica, sans-serif;
+font-style: inherit;
+text-decoration: inherit;
+box-shadow: 0px 2px 10px #000000;
+border:outset 0px #000000;
+border-top-left-radius:10px;
+border-top-right-radius:10px;
+border-bottom-left-radius:10px;
+border-bottom-right-radius:10px;
+}
+
+/* Chaque page est un "article" */
+article {
+text-align:left;
+background-color: light-grey;
+background: light-grey;
+min-height:200px;
+margin: auto;
+margin-top:0px;
+margin-bottom:30px;
+padding: auto;
+padding-top:2px;
+padding-left:20px;
+font-size: 1.3em;
+font-weight: inherit;
+font-family: Arial, Helvetica, sans-serif;
+font-style: inherit;
+text-decoration: inherit;
+box-shadow: 10px 8px 46px #000000;
+border:outset 3px #000000;
+border-top-left-radius:15px;
+border-top-right-radius:15px;
+border-bottom-left-radius:15px;
+border-bottom-right-radius:15px;
+}
+
+
+
+
+/* SOUS MENUS */
+/* Sous menu des liens pour verifier les certifications */
+nav li:hover, nav.sousmenu li:hover, nav.links li:hover{
+	background-color: #3a96dd;
+	color:#f9f1a5;
+	box-shadow: 0 2px 10px 0 rgb(0, 0, 0), 0 2px 10px 0 rgb(0, 0, 0);
+}
+
+nav.sousmenu li{
+	background-color:white;
+	border:outset 2px #012456;
+	color:#012456
+}
+
+/* Sous menu des projets */
+nav.links li{
+	background-color:white;
+	border:outset 2px #012456;
+	color:#012456;
+    width: 50%;
+    margin-left:50%;
+	margin-right:50%;
+    margin: 2px;
+	padding:0px;
+}
+
+
+
+
+/* CERTIFICATIONS */
+
+/* Premieres et dernieres ont les bords arrondis */
+.Start{border-top-left-radius:  20px;border-top-right-radius: 20px;}
+.End {border-bottom-left-radius:  20px;border-bottom-right-radius: 20px;}
+
+/* Couleurs des niveaux */
+li.CertFinie {border:0px solid;font-size:15px;float:left;padding-top:10px;padding-bottom:10px;width:100%;background-color:#012456;color:#eeedf0;}
+li.CertEtude{ border:0px solid;font-size:15px;float:left;padding-top:10px;padding-bottom:10px;width:100%;background-color:#3a96dd;color:#f9f1a5;}
+li.CertFuture{border:0px solid;font-size:15px;float:left;padding-top:10px;padding-bottom:10px;width:100%;background-color:#f9f1a5;color:black;}
+li.CertNope{  border:0px solid;font-size:15px;float:left;padding-top:10px;padding-bottom:10px;width:100%;background-color:transparent;color:grey;}
+ul.CertPlan{text-align:left; text-indent: 5%; border: 1px #9e9e9e solid;border-radius: 20px; margin:0;list-style:none;font-weight:bold;;width:55%;padding:0;display:inline-block;}
+li.CertFinie:hover, li.CertEtude:hover, li.CertFuture:hover{background-color: #012456; color:#eeedf0;}
+
+/* Mini-articles pour les projets de la premiere page */
+div.projet{
+	max-width:calc(50% - 16px);
+	margin:8px;
+}
+.projet{
+	width:50%;
+	min-height:450px;
+	max-height:auto;
+	float:left;
+	text-align:center;
+	margin: 5px;
+	color:black;
+	font-size: large;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: inherit;
+	text-decoration: none;
+	border-radius:10px;
+	box-shadow: 0 2px 4px 0 rgb(0, 0, 0), 0 2px 4px 0 rgb(0, 0, 0);
+}
+.projet img{
+	width:50%;
+	box-shadow: 0 2px 10px 0 rgb(0, 0, 0), 0 2px 10px 0 rgb(0, 0, 0);
+	border-radius:10px;
+}
+.projet:hover{
+background-color:#f9f1a5;
+box-shadow: 0 8px 16px 0 rgb(0, 0, 0), 0 8px 16px 0 rgb(0, 0, 0);
+}
+
+/* Separations entre categories (poweshell, batch...) */
+.categorie_projet {
+    float: left;
+    width: 100%;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgb(0, 0, 0), 0 2px 4px 0 rgb(0, 0, 0);
+	margin-bottom: 20px;
+	margin-top: 20px;
+	background-color: #3a96dd;
+}
+
+/* Affichage du CV en formatPDF */
+.pdfshow{
+	width:80%;
+	height:1200px;
+	border-radius:10px;
+	box-shadow: 0 8px 16px 0 rgb(0, 0, 0), 0 8px 16px 0 rgb(0, 0, 0);
+	margin-bottom:20px;
+}
+
+
+
+
+
+
+
+
+/* Affichage sur smartphone*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+	div.projet{
+	min-width:100%;
+	}
+}
+
+
+
+
+
+
+</style>
+</head>
+
+
+
+
+
+
+<header>
+	<img src="https://alaindespont.github.io/img/banner.png"></img>
+</header>
+
+
+<nav>
+	<ul>
+	<a href="https://alaindespont.github.io/" onClick="reset()"><li>Accueil</li></a>
+	<a href="#" onClick="art2()"><li>Curriculum</li></a>
+	<a href="#" onClick="art3()"><li>Certifications</li></a>
+	<a href="https://github.com/alaindespont?tab=repositories"><li>GitHub</li></a>
+	<a href="#" onClick="art4()"><li>Contact</li></a>
+	</ul>
+</nav>
+
+<body>
+
+
+
+<section>
+
+
+<div id="art1" style="display:block;">
+	<div style="width:100%">
+		
+		<div class="categorie_projet" style="margin-top:0px;"><H1>Scripts PowerShell</h1></div>
+			
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Automate RQI</h3>
+			<img src="https://alaindespont.github.io/img/confidential.png"/>
+			<p>Sur ServiceNow : extrait les Configuration Items de tous les utilisateurs d'une liste .csv en simulant les touches du clavier.</p>
+			<nav class="links"><ul>
+			<a href="#"><li>Non public</li></a>
+			</ul></div>
+
+			<!-- PROJET -->	
+			<div class="projet">
+			<h3>Test de connectivité</h3>
+			<img src="https://alaindespont.github.io/img/testconnectivite.png"/>
+			<p>Permet un diagnostique rapide de la connectivité réseau en affichant les informations essentielles.</p>
+			<nav class="links"><ul>
+			<a href="https://youtu.be/sxFI3Qp2sNA"><li>Voir en vidéo</li></a>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-PowerShell/blob/main/ListingProgrammesInstall%C3%A9s/ListingProgrammesInstall%C3%A9s.ps1"><li>Voir sur Github</li></a>
+			</ul></div>
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Listing programmes installés</h3>
+			<img src="https://alaindespont.github.io/img/listingprogrammes.png"/>
+			<p>Extrait une liste des programmes installés en faisant le tri entre programmes de Windows et programmes installés par l'utilisateur.</p>
+			<nav class="links"><ul>
+			<a href="https://youtu.be/egR4FQxxT3c"><li>Voir en vidéo</li></a>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-PowerShell/blob/main/ListingProgrammesInstall%C3%A9s/ListingProgrammesInstall%C3%A9s.ps1"><li>Voir sur Github</li></a>
+			</ul></div>
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Preview Videos</h3>
+			<img src="https://alaindespont.github.io/img/previewvideos.png"/>
+			<p>Permet de découper a la chaine des vidéos pour des prévisualisations rapides.</p>
+			<nav class="links"><ul>
+			<a href="https://youtu.be/tMxIxuDQhos"><li>Voir en vidéo</li></a>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-PowerShell/blob/main/PreviewsVideos/PreviewVideos.ps1"><li>Voir sur Github</li></a>
+			</ul></div>
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Backup to USB</h3>
+			<img src="https://alaindespont.github.io/img/backupvolume.png"/>
+			<p>Permet de copier des fichiers d'une clé USB sur un autre support</p>
+			<nav class="links"><ul>
+			<a href="https://youtu.be/LmUIn0TPrWU"><li>Voir en vidéo</li></a>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-PowerShell/tree/main/BackupToUSB"><li>Voir sur Github</li></a>
+			</ul></div>
+
+			
+
+
+
+
+		<div class="categorie_projet"><H1>Batchs</h1></div>
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Ticket Maker</h3>
+			<img src="https://alaindespont.github.io/img/confidential.png"/>
+			<p>Crée un ticket pré-rempli sur ServiceNow, en simulant des touches de clavier.</p>
+			<nav class="links"><ul>
+			<a href="#"><li>Non public</li></a>
+			</ul></div>
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Mean Time To Shutdown</h3>
+			<img src="https://alaindespont.github.io/img/meantimetoshutdown.png"/>
+			<p>Permet de programmer l'extinction de l'ordinateur a la minute près.</p>
+			<nav class="links"><ul>
+			<a href="https://youtu.be/kS7CXsy0jhw"><li>Voir en vidéo</li></a>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-Batchs/blob/main/MeanTimeToShutdown/MeanTimeToShutdown.bat"><li>Voir sur Github</li></a>
+			</ul></div>
+				
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Test AGGroup SQL</h3>
+			<img src="https://alaindespont.github.io/img/sqltester.png"/>
+			<p>Permet de tester un groupe de disponibilié SQL Serveur en envoyant des requetes en lecture seule/requetes normales pour voir le serveur de destination.</p>
+			<nav class="links"><ul>
+			<a href="https://youtu.be/zuvCNPIKRXA"><li>Voir en vidéo</li></a>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-Batchs/blob/main/TestAGGroupSQL/TestAGGroupSQL.bat"><li>Voir sur Github</li></a>
+			</ul></div>	
+			
+
+
+
+
+
+		<div class="categorie_projet"><H1>Documents Web</h1></div>	
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Moteur de recherche multi-site</h3>
+			<img src="https://alaindespont.github.io/img/multisearch.png"/>
+			<p>Permet de rechercher sur plusieurs sites différents en une fois.</p>
+			<nav class="links"><ul>
+			<a href="https://alaindespont.github.io/MoteurRechercheMultisite/index.html"><li>Exemple interactif</li></a>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-Web/blob/main/MoteurRechercheMultisite/1_Moteur%20de%20recherche%20multi-sites.html"><li>Voir sur Github</li></a>
+			</ul></div>
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Easy Connect</h3>
+			<img src="https://alaindespont.github.io/img/easyconnect.png"/>
+			<p>Dashboard de liens qui s'adapte a la fenêtre.</p>
+			<nav class="links"><ul>
+			<a href="https://alaindespont.github.io/EasyConnect/EasyConnect.html"><li>Exemple interactif</li></a>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-Web/tree/main/EasyConnect"><li>Voir sur Github</li></a>
+			</ul></div>
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Porte des Etoiles</h3>
+			<img src="https://alaindespont.github.io/img/stargate.png"/>
+			<p>SImulateur de la porte de la série de science-fiction du même nom.</p>
+			<nav class="links"><ul>
+			<a href="https://alaindespont.github.io/Stargate/index.html"><li>Exemple interactif</li></a>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-Web/tree/main/Stargate"><li>Voir sur Github</li></a>
+			</ul></div>
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Système Solaire</h3>
+			<img src="https://alaindespont.github.io/img/solarsystem.png"/>
+			<p>Projet Codeacedmy (terre-lune-soleil) poussé a l'extrème avec rotation précises des astres et leur satellites les plus importants.</p>
+			<nav class="links"><ul>
+			<a href="https://alaindespont.github.io/SystemeSolaire/index.html"><li>Exemple interactif</li></a>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-Web/tree/main/SystemeSolaire"><li>Voir sur Github</li></a>
+			</ul></div>
+	
+
+
+
+
+			
+			<div class="categorie_projet"><H1>Documents divers</h1></div>	
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Projet de fin d'études du diplome d'Administrateur système</h3>
+			<img src="https://alaindespont.github.io/img/diplome.png"/>
+			<p>Mon dossier final présenté devant deux experts indépendants.</p>
+			<nav class="links"><ul>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-Documents/blob/main/Dossier%20final%20IDEC/DESPONT_Alain_DossierFinal2021.pdf"><li>Document PDF</li></a>
+			</ul></div>
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Lab4Tech Study Manager</h3>
+			<img src="https://alaindespont.github.io/img/lab4techmanager.png"/>
+			<p>Document pour motiver les stagiaires de Lab4Tech et les aider a garder le cap dans leur autoformation de la certification MD-100</p>
+			<nav class="links"><ul>
+			<a href="https://docs.google.com/spreadsheets/d/1wf4pKaCr0QO2PVeMlti_MJqMGPHMcpcKeofQDr2YH5o"><li>Exemple interactif</li></a>
+			</ul></div>
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Capsule de Lab4Tech</h3>
+			<img src="https://alaindespont.github.io/img/lab4techpresentation.png"/>
+			<p>Présentations faites pour les stagiaires de lab4Tech sur des sujets IT</p>
+			<nav class="links"><ul>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-Documents/blob/main/Lab4Tech%20Capsules/La%20haute-disponibilit%C3%A9%20sur%20SQL%20Server.pptx?raw=true"><li>Haute-disponibilité SQL Server</li></a>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-Documents/blob/main/Lab4Tech%20Capsules/BackupCapturePowershell_Plan.png"><li> Schéma script de backup</li></a>
+			</ul></div>
+
+			<!-- PROJET -->
+			<div class="projet">
+			<h3>Plan des extincteurs et sorties de secours</h3>
+			<img src="https://alaindespont.github.io/img/extincteurs.png"/>
+			<p>Projet Codeacedmy (terre-lune-soleil) poussé a l'extrème avec rotation précises des astres et leur satellites les plus importants.</p>
+			<nav class="links"><ul>
+			<a href="https://github.com/alaindespont/PUBLIC_AD-Documents/blob/main/PlanDesExtincteurs/PlanDesExtincteurs.pdf"><li>Document PDF</li></a>
+			</ul></div>
+
+			
+
+
+
+
+	</div>
+</div> <!-- FIN ARTICLE -->
+
+
+
+
+
+
+
+<div id="art2" style="display:none;">
+	<div class="categorie_projet" style="margin-top:0px;"><H1>Curriculum Vitae</h1></div>
+	<object class="pdfshow" data="https://alaindespont.github.io/downloads/DESPONT_Alain_CurriculumVitae.pdf" type="application/pdf">
+	<embed src="https://alaindespont.github.io/downloads/DESPONT_Alain_CurriculumVitae.pdf" type="application/pdf" />
+	</object>	
+</div> <!-- FIN ARTICLE -->			
+
+
+
+
+
+
+
+
+<div id="art3" style="display:none;">
+
+	
+	
+
+	<div class="categorie_projet" style="margin-top:0px;"><H1>Vérfier mes certifications & Légende</h1></div>
+		<nav class="sousmenu">
+			<ul>
+			<a href="https://www.credly.com/users/alain-despont/badges"><li>Credly</li></a>
+			<a href="https://cs.lpi.org/caf/Xamman/certification/verify/LPI000474190/4et4kdqmn2"><li>Linux Professional Institute</li></a>
+			</ul>
+			</nav>
+
+	<ul class="CertPlan">
+	<li class="CertFinie Start">🏆 OBTENUE</li>
+	<li class="CertEtude">📚 EN ETUDE</li>
+	<li class="CertFuture">PROJET</li>
+	<li class="CertNope End">PAS PREVU</li>
+	</ul>
+
+	<div class="categorie_projet"><a href="https://www.comptia.org/content/it-careers-path-roadmap/it-support-specialist"><H1>CompTIA (Computing Technology Industry Association)</h1></a></div>
+	<ul class="CertPlan">
+	<li class="CertFinie Start">🏆 ITF+</li>
+	<li class="CertFinie">🏆 A+</li>
+	<li class="CertNope">Network+ -> CCNA</li>
+	<li class="CertFuture">Security+</li>
+	<li class="CertNope">Linux+ -> LPIC1</li>
+	<li class="CertFuture End">Server+</li>
+	</ul>
+
+	<div class="categorie_projet"><a href="https://www.lpi.org/our-certifications/summary-of-certifications"><H1>LPI (Linux Professional Institute)</h1></a></div>
+	<ul class="CertPlan">
+	<li class="CertFinie Start">🏆 LPI Essentials</li>
+	<li class="CertFuture">LPIC-1</li>
+	<li class="CertNope">LPIC-2</li>
+	<li class="CertNope End">LPIC-3</li>
+	</ul>
+
+	<div class="categorie_projet"><a href="#"><H1>Cisco</h1></a></div>
+	<ul class="CertPlan">
+	<li class="CertNope Start">CCT -> CCNA</li>
+	<li class="CertFuture">CCNA</li>
+	<li class="CertNope">CCNP</li>
+	<li class="CertNope End">CCIE</li>
+	</ul>
+
+	<div class="categorie_projet"><a href="#"><H1>ITIL (Information Technology Infrastructure Library)</h1></a></div>
+	<ul class="CertPlan">
+	<li class="CertEtude Start">📚 ITIL Fundation</li>
+	<li class="CertNope">ITIL Managing Professional</li>
+	<li class="CertNope">ITIL Strategic Leader</li>
+	<li class="CertNope End">ITIL Master</li>
+	</ul>
+
+	<div class="categorie_projet"><a href="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI"><H1>Microsoft Azure</h1></a></div>
+	<ul class="CertPlan">
+	<li class="CertFinie Start">🏆 Azure Fundamentals</li>
+	<li class="CertFinie">🏆 Azure AI Fundamentals</li>
+	<li class="CertFinie">🏆 Azure Data Fundamentals</li>
+	<li class="CertFuture">Azure Administrator Associate</li>
+	<li class="CertFuture">DevOps Engineer Expert</li>
+	<li class="CertFuture">Azure Solutions Architect Expert</li>
+	<li class="CertFuture">Azure Virtual Desktop Specialty</li>
+	<li class="CertNope">Azure Developer Associate</li>
+	<li class="CertNope">Azure Stack Hub Operator Associate</li>
+	<li class="CertNope">Azure AI Engineer Associate</li>
+	<li class="CertNope">Azure Data Engineer Associate</li>
+	<li class="CertNope">Azure Database Administrator Associate</li>
+	<li class="CertNope">Azure Data Scientist Associate</li>
+	<li class="CertNope">Azure for SAP Workloads Specialty</li>
+	<li class="CertNope End">Azure IoT Developer Specialty</li>
+	</ul>
+
+	<div class="categorie_projet"><a href="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI"><H1>Microsoft 365</h1></a></div>
+	<ul class="CertPlan">
+	<li class="CertFinie Start">🏆 Microsoft 365 Certified: Fundamentals</li>
+	<li class="CertEtude">[🏆 MD100]+[📚 MD101] Modern Desktop Administrator Associate</li>
+	<li class="CertFuture">Messaging Administrator Associate</li>
+	<li class="CertFuture">Teams Administrator Associate</li>
+	<li class="CertFuture">Teams Support Engineer Associate</li>
+	<li class="CertFuture">[MS100]+[MS101] Enterprise Administrator Expert</li>	
+	<li class="CertNope End">Developer Associate</li>
+	</ul>
+
+	<div class="categorie_projet"><a href="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI"><H1>Microsoft Dynamics 365</h1></a></div>
+	<ul class="CertPlan">
+	<li class="CertFinie Start">🏆 Dynamics 365 Fundamentals [Retirée]</li>
+	<li class="CertFuture">Dynamics 365 Fundamentals (CRM)</li>
+	<li class="CertFuture">Dynamics 365 Fundamentals (ERP)</li>
+	<li class="CertNope">Dynamics 365 Sales Functional Consultant Associate</li>
+	<li class="CertNope">Dynamics 365 Marketing Functional Consultant Associate</li>
+	<li class="CertNope">Dynamics 365 Customer Service Functional Consultant Associate</li>
+	<li class="CertNope">Dynamics 365 Field Service Functional Consultant Associate</li>
+	<li class="CertNope">Dynamics 365 Finance Functional Consultant Associate</li>
+	<li class="CertNope">Dynamics 365 Supply Chain Management</li>
+	<li class="CertNope">Dynamics 365 Commerce Functional Consultant Associate</li>
+	<li class="CertNope">Dynamics 365: Finance and Operations Apps Developer Associate</li>
+	<li class="CertNope">Dynamics 365: Finance and Operations Apps Solution Architect Expert</li>
+	<li class="CertNope End">Dynamics 365 Business Central Functional Consultant Associate</li>
+	</ul>
+
+	<div class="categorie_projet"><a href="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI"><H1>Microsoft Power Plateform</h1></a></div>
+	<ul class="CertPlan">
+	<li class="CertFinie Start">🏆 Power Platform Fundamentals</li>
+	<li class="CertFuture">Power Platform App Maker Associate</li>
+	<li class="CertNope">Power Platform Functional Consultant Associate</li>
+	<li class="CertNope">Power Platform Developer Associate</li>
+	<li class="CertNope">Power Platform Solution Architect Expert</li>
+	<li class="CertNope End">Data Analyst Associate</li>
+	</ul>
+
+	<div class="categorie_projet"><a href="https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE2PjDI"><H1>Microsoft Security, compliance and identity</h1></a></div>
+	<ul class="CertPlan">
+	<li class="CertFuture Start">Security, Compliance, and Identity Fundamentals</li>
+	<li class="CertFuture">Azure Security Engineer Associate</li>
+	<li class="CertFuture">Microsoft 365 Certified: Security Administrator Associate</li>
+	<li class="CertNope">Security Operations Analyst Associate</li>
+	<li class="CertNope">Identity and Access Administrator Associate</li>
+	<li class="CertNope End">Information Protection Administrator Associate</li>
+	</ul>
+
+</div> <!-- FIN ARTICLE -->
+
+
+
+<div id="art4" style="display:none;">
+	<div class="categorie_projet"  style="margin-top:0px;"><H1>Me contacter</h1></a></div>
+	<nav class="sousmenu">
+		<ul>
+		<a href="#" onclick="Copy()"><li>Email</li></a>
+		<a href="https://alaindespont.github.io/downloads/Alain Philip Despont.vcf"><li>vCard</li></a>
+		</ul>
+	</nav>
+</div> <!-- FIN ARTICLE -->
+
+
+<!-- FIN DE SECTION -->
+</section>
+<footer>
+Site web conçu par: Alain Philip Despont, tous droits reservés.
+</footer>
+</div>
+
+<!-- FIN DE LA PAGE -->
+</body>
+</html>
+
