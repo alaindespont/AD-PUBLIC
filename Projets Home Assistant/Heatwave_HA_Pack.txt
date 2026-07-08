@@ -1,0 +1,232 @@
+// MARKDOWN CARD - Delta temperatures
+  {% set outdoor = states('sensor.meter_0fc2') %}
+  {% set indoor = states('sensor.meter_9287') %}
+  {% set delta = states('sensor.outdoor_indoor_temperature_delta') %}
+  {% set eta_window = states('sensor.estimated_window_opening_time') | float(none) %}
+
+  **Outdoor:** {{ outdoor }} °C  
+  **Indoor:** {{ indoor }} °C  
+  *Delta:* {{ delta }} °C  
+
+  ---
+
+  **Window opening estimate:**  
+  {% if eta_window is none %}
+  Not enough data yet
+  {% elif eta_window == 0 %}
+  You can open the windows now
+  {% else %}  In {{ (eta_window // 60) | int }}h{{ "%02d" | format((eta_window % 60) | int) }}, around {{ (now() + timedelta(minutes=eta_window)).strftime('%H:%M') }}
+  {% endif %}
+
+//GAUGE CARD
+type: gauge
+name: Effet Wet Bulb Salon
+entity: sensor.indoor_wet_bulb_temperature
+unit: °C
+min: 15
+max: 35
+needle: true
+segments:
+  - from: 15
+    color: "#43a047"
+  - from: 24
+    color: "#fdd835"
+  - from: 28
+    color: "#fb8c00"
+  - from: 30
+    color: "#e53935"
+  - from: 32
+    color: "#212121"
+grid_options:
+  columns: 9
+  rows: auto
+
+
+//MARKDOWN CARD - Wet bulb
+  {% set temp = states('sensor.meter_9287') %}
+  {% set humidity = states('sensor.meter_9287_humidite') %}
+  {% set wb_state = states('sensor.indoor_wet_bulb_temperature') %}
+
+  {% if not is_number(wb_state) %}
+  <ha-alert alert-type="warning">Wet-bulb calculation unavailable.</ha-alert>
+  {% else %}
+  {% set wb = wb_state | float %}
+
+  {% if wb >= 32 %}
+  <ha-alert alert-type="error">Critical heat stress: {{ wb }} °C</ha-alert>
+  {% elif wb >= 30 %}
+  <ha-alert alert-type="error">High heat stress: {{ wb }} °C</ha-alert>
+  {% elif wb >= 28 %}
+  <ha-alert alert-type="warning">Elevated heat stress: {{ wb }} °C</ha-alert>
+  {% elif wb >= 24 %}
+  <ha-alert alert-type="warning">Moderate heat stress: {{ wb }} °C</ha-alert>
+  {% else %}
+  <ha-alert alert-type="success">Comfortable conditions: {{ wb }} °C</ha-alert>
+  {% endif %}
+  {% endif %}
+
+  | Sensor | Temperature | Humidity | Wet Bulb |
+  |---|---:|---:|---:|
+  | Indoor | {{ temp }} °C | {{ humidity }} % | **{{ wb_state }} °C** |
+
+
+###############################################################################
+# TEMPERATURE TARGET
+#
+# Adjustable temperature target used to estimate when the outdoor temperature
+# will go below a fixed value.
+###############################################################################
+
+input_number:
+  temperature_target:
+    name: Temperature Target
+    min: -10
+    max: 25
+    step: 0.1
+    mode: box
+    unit_of_measurement: "°C"
+
+
+
+###############################################################################
+# TEMPERATURE RATE SENSORS
+#
+# These sensors calculate the temperature change rate in °C/hour.
+#
+# Outdoor temperature:
+# - sensor.meter_0fc2
+#
+# Indoor / living room temperature:
+# - sensor.meter_9287
+#
+# The 90-minute window smooths short-term fluctuations while keeping the
+# estimation responsive enough for evening cooling.
+###############################################################################
+
+sensor:
+  - platform: derivative
+    source: sensor.meter_0fc2
+    name: Outdoor Temperature Rate
+    round: 3
+    unit_time: h
+    time_window: "01:30:00"
+    max_sub_interval: "00:05:00"
+
+  - platform: derivative
+    source: sensor.outdoor_indoor_temperature_delta
+    name: Outdoor Indoor Delta Rate
+    round: 3
+    unit_time: h
+    time_window: "01:30:00"
+    max_sub_interval: "00:05:00"
+
+
+ #########################################################################
+      # WET BULB TEMPERATURE
+      #
+      # Calculates the wet-bulb temperature from indoor temperature and relative
+      # humidity using the Stull approximation.
+      #
+      # Indoor temperature:
+      # - sensor.meter_9287
+      #
+      # Indoor humidity:
+      # - sensor.meter_9287_humidite
+      #########################################################################
+
+      - name: "Indoor Wet Bulb Temperature"
+        unique_id: indoor_wet_bulb_temperature
+        device_class: temperature
+        state_class: measurement
+        unit_of_measurement: "°C"
+        icon: mdi:thermometer-water
+        availability: >
+          {{ is_number(states('sensor.meter_9287')) and is_number(states('sensor.meter_9287_humidite')) }}
+        state: >
+          {% set t = states('sensor.meter_9287') | float %}
+          {% set rh = states('sensor.meter_9287_humidite') | float %}
+          {{ (
+            t * atan(0.151977 * sqrt(rh + 8.313659))
+            + atan(t + rh)
+            - atan(rh - 1.676331)
+            + 0.00391838 * rh * sqrt(rh) * atan(0.023101 * rh)
+            - 4.686035
+          ) | round(1) }}
+
+      #########################################################################
+      # OUTDOOR / INDOOR TEMPERATURE DELTA
+      #
+      # Calculates the difference between outdoor and indoor temperature.
+      #
+      # Positive value  = outdoor is warmer than indoor.
+      # Zero or negative = outdoor is equal or cooler than indoor.
+      #
+      # This is the main value used to decide when opening the windows becomes
+      # useful.
+      #########################################################################
+
+      - name: outdoor_indoor_temperature_delta
+        unit_of_measurement: "°C"
+        state: >
+          {% set outdoor = states('sensor.meter_0fc2') | float(none) %}
+          {% set indoor = states('sensor.meter_9287') | float(none) %}
+          {% if outdoor is not none and indoor is not none %}
+            {{ (outdoor - indoor) | round(2) }}
+          {% else %}
+            unknown
+          {% endif %}
+
+      #########################################################################
+      # ESTIMATED WINDOW OPENING TIME
+      #
+      # Estimates how many minutes remain before the outdoor temperature becomes
+      # equal to or lower than the indoor temperature.
+      #
+      # To avoid unrealistic predictions when the measured cooling rate is too
+      # low, a minimum evening cooling rate of -0.5 °C/hour is enforced.
+      #
+      # Result:
+      # - 0       = windows can be opened now
+      # - unknown = not enough data
+      # - >0      = estimated number of minutes before opening
+      #########################################################################
+
+      - name: estimated_window_opening_time
+        unit_of_measurement: "min"
+        state: >
+          {% set delta = states('sensor.outdoor_indoor_temperature_delta') | float(none) %}
+          {% set rate_raw = states('sensor.outdoor_indoor_delta_rate') | float(none) %}
+          {% if delta is none or rate_raw is none %}
+            unknown
+          {% elif delta <= 0 %}
+            0
+          {% else %}
+            {% set rate = [-0.5, rate_raw] | min %}
+            {{ ((delta / (-rate)) * 60) | round(0) }}
+          {% endif %}
+
+      #########################################################################
+      # ESTIMATED TARGET TEMPERATURE TIME
+      #
+      # Estimates when the outdoor temperature will go below the fixed
+      # temperature target defined above.
+      #
+      # This is less useful than the window-opening estimation, but it can help
+      # answer: "When will it be below X °C outside?"
+      #########################################################################
+
+      - name: estimated_target_temperature_time
+        unit_of_measurement: "min"
+        state: >
+          {% set outdoor = states('sensor.meter_0fc2') | float(none) %}
+          {% set target = states('input_number.temperature_target') | float(none) %}
+          {% set rate = states('sensor.outdoor_temperature_rate') | float(none) %}
+          {% if outdoor is none or target is none or rate is none %}
+            unknown
+          {% elif outdoor <= target %}
+            0
+          {% elif rate < -0.01 %}
+            {{ (((outdoor - target) / (-rate)) * 60) | round(0) }}
+          {% else %}
+            unknown
+          {% endif %}
