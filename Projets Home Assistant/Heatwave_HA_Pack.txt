@@ -1,3 +1,6 @@
+// This is given as is. Please backup your HA before trying to implement this and ask your fellow AI to implement it.
+
+
 // MARKDOWN CARD - Delta temperatures
   {% set outdoor = states('sensor.meter_0fc2') %}
   {% set indoor = states('sensor.meter_9287') %}
