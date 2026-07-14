@@ -9,7 +9,7 @@ The content reflects my evolution from IT operations and infrastructure automati
 - `01_EndpointManagement` — Endpoint, Intune, Windows, Microsoft Graph, and security-related projects
 - `02_Automations_Operations` — Automation scripts and operational tools
 - `03_Infrastructure` — Infrastructure, servers, virtualization, databases, and laboratory projects
-- `05_ProfessionalCasesStudies` — Selected consulting projects and technical case studies
+- `04_ProfessionalCaseStudies` — Selected consulting projects and technical case studies
 - `90_Legacy` — Older projects preserved as part of my technical journey
 - `99_Experiments` — Prototypes, personal projects, and exploratory work
 
