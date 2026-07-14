@@ -1,28 +1,26 @@
-# Mes projets publics
+# AD-PUBLIC
 
-Contient tous mes projets de scripts, bouts de codes, documents IT que j'ai décidé de rendre publique.
+This repository contains selected scripts, projects, experiments, and professional case studies created throughout my technical career.
 
-## Projets sans programmation
+The content reflects my evolution from IT operations and infrastructure automation to Modern Workplace, Microsoft Intune, Endpoint Management, security, governance, and AI-assisted operations.
 
-Projets et documents plus généraux, comme des documentations, schémas, présentations etc.
+## Structure
 
-## Projets Batchs
+- `01_EndpointManagement` — Endpoint, Intune, Windows, Microsoft Graph, and security-related projects
+- `02_Automations_Operations` — Automation scripts and operational tools
+- `03_Infrastructure` — Infrastructure, servers, virtualization, databases, and laboratory projects
+- `05_ProfessionalCasesStudies` — Selected consulting projects and technical case studies
+- `90_Legacy` — Older projects preserved as part of my technical journey
+- `99_Experiments` — Prototypes, personal projects, and exploratory work
 
-Programmation a l'aide de CMD
+## Technical Articles
 
+Additional context, architecture notes, and technical articles are published on:
 
-## Projets Powershells
+https://blog.adhomelabs.ch/
 
-Mon language de scripting préféré
+## Disclaimer
 
-## Projets SQL
+The projects in this repository are provided as technical references and personal examples.
 
-Lié aux bases de données SQL
-
-## Projets Webdev
-
-Pages web et scripts Javascript
-
-## Projets Spreadsheets
-
-Lié à des fichiers excels
+Some content is historical, experimental, or intentionally simplified. Review and test everything before using it in a production environment.
