@@ -650,8 +650,8 @@ Function Final-Function{
     $inputFile = $PSCommandPath
 
 # Compte utilisé par le script
-    $user = "DOMAINE\Administrateur"
-    $password = "Passw0rd"
+    $user = "EXAMPLE\Administrateur"
+    $password = "<REPLACE_WITH_SECURE_SECRET>"
 
 # Formattage de la date et des logs
    
