@@ -1,7 +1,6 @@
 # AD-PUBLIC
 
 This repository contains selected scripts, projects, experiments, and professional case studies created throughout my technical career.
-
 The content reflects my evolution from IT operations and infrastructure automation to Modern Workplace, Microsoft Intune, Endpoint Management, security, governance, and AI-assisted operations.
 
 ## Structure
@@ -16,11 +15,11 @@ The content reflects my evolution from IT operations and infrastructure automati
 ## Technical Articles
 
 Additional context, architecture notes, and technical articles are published on:
-
 https://blog.adhomelabs.ch/
 
 ## Disclaimer
 
 The projects in this repository are provided as technical references and personal examples.
-
-Some content is historical, experimental, or intentionally simplified. Review and test everything before using it in a production environment.
+Some content is historical, experimental, or intentionally simplified.
+Review and test everything before using it in a production environment.
+Client-specific information is limited to content that can be shared publicly; sensitive implementation details are omitted or anonymized.
