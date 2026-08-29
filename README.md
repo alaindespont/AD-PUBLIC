@@ -5,12 +5,12 @@ The content reflects my evolution from IT operations and infrastructure automati
 
 ## Structure
 
-- `01_EndpointManagement` — Endpoint, Intune, Windows, Microsoft Graph, and security-related projects
-- `02_Automations_Operations` — Automation scripts and operational tools
-- `03_Infrastructure` — Infrastructure, servers, virtualization, databases, and laboratory projects
-- `04_ProfessionalCaseStudies` — Selected consulting projects and technical case studies
-- `90_Legacy` — Older projects preserved as part of my technical journey
-- `99_Experiments` — Prototypes, personal projects, and exploratory work
+- [`01_EndpointManagement`](./01_EndpointManagement) — Endpoint, Intune, Windows, Microsoft Graph, and security-related projects
+- [`02_Automations_Operations`](./02_Automations_Operations) — Automation, scripting, reporting, and operational tooling
+- [`03_Infrastructure`](./03_Infrastructure) — Infrastructure, Active Directory, networking, and platform-related projects
+- [`04_ProfessionalCaseStudies`](./04_ProfessionalCaseStudies) — Selected professional projects and case studies
+- [`90_Legacy`](./90_Legacy) — Older projects preserved for historical reference
+- [`99_Experiments`](./99_Experiments) — Tests, prototypes, and technical experiments
 
 ## Technical Articles
 
