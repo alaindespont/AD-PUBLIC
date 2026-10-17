@@ -2,7 +2,7 @@
 $rqi = Import-Csv "AutomatedReturns_Namelist.csv" -Delimiter ";"
 
 # Demmarer le navigateur a l'adresse du rapport
-START MSEDGE "https://pmiv.service-now.com/nav_to.do?uri=%2Fsys_report_template.do%3Fjvar_report_id%3D8d2e43d4dba3f45418b7124215961968%26jvar_selected_tab%3DmyReports%26jvar_list_order_by%3D%26jvar_list_sort_direction%3D%26sysparm_reportquery%3D%26jvar_search_created_by%3D%26jvar_search_table%3D%26jvar_search_report_sys_id%3D%26jvar_report_home_query%3D%23"
+START MSEDGE "https://example.service-now.com/nav_to.do?uri=%2Fsys_report_template.do%3Fjvar_report_id%3DREPLACE_WITH_REPORT_ID"
 timeout /t 10
 
 # Pour chaque ligne dans le CSV, implante le nom dans le rapport et l'exporte
