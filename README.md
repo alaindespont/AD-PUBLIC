@@ -23,3 +23,4 @@ The projects in this repository are provided as technical references and persona
 Some content is historical, experimental, or intentionally simplified.
 Review and test everything before using it in a production environment.
 Client-specific information is limited to content that can be shared publicly; sensitive implementation details are omitted or anonymized.
+The MIT license applies to my original code and documentation. Third-party materials and client-owned content are excluded and remain subject to their respective rights and permissions.
