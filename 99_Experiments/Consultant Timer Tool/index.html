@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultant Timer & Expense Tool</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="app">
+        <header class="topbar">
+            <div>
+                <div class="eyebrow">Consultant Timer & Expense Tool</div>
+                <h1 id="todayTitle">Journee</h1>
+            </div>
+        </header>
+
+        <section class="card timer-card">
+            <div class="section-title-row">
+                <h2>Timer <span id="timerStateBadge" class="state-badge off">OFF</span></h2>
+            </div>
+
+            <div class="current-timer">
+                <div id="currentTypeLabel" class="current-type">Aucun timer</div>
+                <div id="currentElapsed" class="current-elapsed">00:00:00</div>
+            </div>
+
+            <div class="timer-grid">
+                <button id="btnTravel" class="btn btn-soft travel" type="button">🚗<span>Deplacement</span></button>
+                <button id="btnClient" class="btn btn-soft client" type="button">💼<span>Clientele</span></button>
+                <button id="btnBreak" class="btn btn-soft break" type="button">☕<span>Pause</span></button>
+            </div>
+ 
+            <button id="btnManualTime" class="btn btn-secondary" type="button">➕ Ajouter un temps</button>
+            <button id="btnStop" class="btn btn-stop" type="button">⏹ Stop</button>
+        </section>
+
+        <section class="card expenses-card">
+            <h2>Frais</h2>
+
+            <div class="expense-grid">
+                <button id="btnFixedExpense" class="btn btn-soft expense-fixed" type="button">
+                    🍽️<span>Forfait 17 CHF</span>
+                </button>
+                <button id="btnCustomExpense" class="btn btn-soft expense-free" type="button">
+                    ✏️<span>Frais libre</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="card summary-card">
+            <h2>Resume</h2>
+
+            <div class="summary-grid">
+                <div class="summary-box">
+                    <span>Temps décompté</span>
+                    <strong id="summaryRounded">00h00</strong>
+                </div>
+                <div class="summary-box">
+                    <span>Total des frais</span>
+                    <strong id="summaryExpenses">0.00 CHF</strong>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button id="btnMail" class="btn btn-primary" type="button">✉️ Envoyer par mail</button>
+                <button id="btnExport" class="btn btn-primary" type="button">📤 Exporter CSV</button>
+                <button id="btnReset" class="btn btn-danger-outline" type="button">Reset journee</button>
+            </div>
+
+            <div class="detail-block">
+                <h3>Temps</h3>
+                <div id="timeEntries" class="entries empty">Aucune entree.</div>
+            </div>
+
+            <div class="detail-block">
+                <h3>Frais</h3>
+                <div id="expenseEntries" class="entries empty">Aucun frais.</div>
+            </div>
+        </section>
+    </main>
+
+        <div id="timeModal" class="modal hidden" aria-hidden="true">
+            <div class="modal-backdrop" data-modal-close="true"></div>
+            <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="timeModalTitle">
+                <h2 id="timeModalTitle">Ajouter un temps</h2>
+
+                <label class="form-label" for="timeType">Libelle</label>
+                <select id="timeType" class="form-control">
+                    <option value="travel">🚗 Deplacement</option>
+                    <option value="client">💼 Clientele</option>
+                    <option value="break">☕ Pause</option>
+                </select>
+
+                <label class="form-label" for="timeStart">Heure de debut</label>
+                <input id="timeStart" class="form-control" type="time">
+
+                <label class="form-label" for="timeEnd">Heure de fin</label>
+                <input id="timeEnd" class="form-control" type="time">
+
+                <div class="modal-actions">
+                    <button id="btnCancelTimeModal" class="btn btn-modal-cancel" type="button">Annuler</button>
+                    <button id="btnSaveTimeModal" class="btn btn-modal-save" type="button">Valider</button>
+                </div>
+            </div>
+        </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
