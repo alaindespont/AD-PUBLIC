@@ -5,6 +5,7 @@ const MAIL_TO = "alain.despont@outlook.com";
 const MAIL_SUBJECT_PREFIX = "Consultant Timer & Expense Tool";
 
 const TYPES = {
+    __proto__: null,
     travel: { label: "Deplacement", emoji: "🚗" },
     client: { label: "Clientele", emoji: "💼" },
     break: { label: "Pause", emoji: "☕" }
@@ -397,6 +398,51 @@ function renderSummary() {
     els.summaryExpenses.textContent = `${t.expenseTotal.toFixed(2)} CHF`;
 }
 
+function createEntryRow(kind, id, title, total, subtitle) {
+    const row = document.createElement("div");
+    row.className = "entry";
+
+    const main = document.createElement("div");
+    main.className = "entry-main";
+
+    const titleElement = document.createElement("div");
+    titleElement.className = "entry-title";
+    titleElement.textContent = String(title);
+    main.appendChild(titleElement);
+
+    if (subtitle !== undefined) {
+        const subtitleElement = document.createElement("div");
+        subtitleElement.className = "entry-sub";
+        subtitleElement.textContent = subtitle;
+        main.appendChild(subtitleElement);
+    }
+
+    const actions = document.createElement("div");
+    actions.className = "entry-actions";
+
+    const edit = document.createElement("button");
+    edit.className = "edit-btn";
+    edit.type = "button";
+    edit.setAttribute(`data-edit-${kind}`, id);
+    edit.textContent = "Editer";
+
+    const remove = document.createElement("button");
+    remove.className = "delete-btn";
+    remove.type = "button";
+    remove.setAttribute(`data-delete-${kind}`, id);
+    remove.textContent = "Supprimer";
+
+    actions.append(edit, remove);
+    main.appendChild(actions);
+
+    const totalElement = document.createElement("div");
+    totalElement.className = "entry-total";
+    totalElement.textContent = total;
+
+    row.append(main, totalElement);
+    return row;
+}
+
 function renderTimeEntries() {
     if (state.timeEntries.length === 0) {
         els.timeEntries.className = "entries empty";
@@ -405,27 +451,14 @@ function renderTimeEntries() {
     }
 
     els.timeEntries.className = "entries";
-    els.timeEntries.innerHTML = "";
+    els.timeEntries.textContent = "";
 
     state.timeEntries.forEach(entry => {
         const type = TYPES[entry.type] || TYPES.client;
         const countedMs = roundedBillableMs(getEntryMs(entry));
-
-        const row = document.createElement("div");
-        row.className = "entry";
-
-        row.innerHTML = `
-            <div class="entry-main">
-                <div class="entry-title">${formatClock(entry.start)} : ${formatClock(entry.end)} = ${formatDurationText(countedMs)} ${type.emoji} ${type.label}</div>
-                <div class="entry-actions">
-                    <button class="edit-btn" type="button" data-edit-time="${entry.id}">Editer</button>
-                    <button class="delete-btn" type="button" data-delete-time="${entry.id}">Supprimer</button>
-                </div>
-            </div>
-            <div class="entry-total">${formatDurationText(countedMs)}</div>
-        `;
-
-        els.timeEntries.appendChild(row);
+        const total = formatDurationText(countedMs);
+        const title = `${formatClock(entry.start)} : ${formatClock(entry.end)} = ${total} ${type.emoji} ${type.label}`;
+        els.timeEntries.appendChild(createEntryRow("time", entry.id, title, total));
     });
 }
 
@@ -437,25 +470,12 @@ function renderExpenseEntries() {
     }
 
     els.expenseEntries.className = "entries";
-    els.expenseEntries.innerHTML = "";
+    els.expenseEntries.textContent = "";
 
     state.expenses.forEach(expense => {
-        const row = document.createElement("div");
-        row.className = "entry";
-
-        row.innerHTML = `
-            <div class="entry-main">
-                <div class="entry-title">${expense.label}</div>
-                <div class="entry-sub">${formatClock(expense.createdAt)}</div>
-                <div class="entry-actions">
-                    <button class="edit-btn" type="button" data-edit-expense="${expense.id}">Editer</button>
-                    <button class="delete-btn" type="button" data-delete-expense="${expense.id}">Supprimer</button>
-                </div>
-            </div>
-            <div class="entry-total">${expense.amount.toFixed(2)} CHF</div>
-        `;
-
-        els.expenseEntries.appendChild(row);
+        const total = `${expense.amount.toFixed(2)} CHF`;
+        const subtitle = formatClock(expense.createdAt);
+        els.expenseEntries.appendChild(createEntryRow("expense", expense.id, expense.label, total, subtitle));
     });
 }
 
